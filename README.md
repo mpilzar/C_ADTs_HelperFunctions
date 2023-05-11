@@ -1,2 +1,2 @@
-# C_Helper_Functions
-An assortment of C helper functions and implementations for different abstract data types.
+## Helper Functions & Advanced Data Types in C
+**An assortment of C helper functions and implementations for a few abstract data types.**
