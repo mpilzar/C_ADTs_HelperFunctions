@@ -39,6 +39,6 @@ char* copystring(const char* str) {
     strcpy(str2, str);
     return str2; }
 /*Example useage:
-    Initialization: str = copystring(This is a string);
+    Initialization: str = copystring("This is a string");
     Duplication: str2 = copystring(str);
 */
