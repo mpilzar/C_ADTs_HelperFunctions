@@ -5,6 +5,16 @@
 //Functions that aid with array management.
 //All functions work on integer arrays, but can be modified as necessary.
 
+/*      CONTENTS:
+    arrayaverage: Function to calculate the average of an array.
+    printarray: Function to print an array.
+    arraymin: Function to find the minimum element in an array.
+    arraymax: Function to find the maximum element in an array.
+    arrlinsearch: Linear search method for the array.
+    arrsort: Function to perform binary sort on an array.
+    arrbinsearch: Function to perform binary sort on an array.
+    arrflip: Function to flip (reverse) an array.
+*/
 
 //Function to calculate the average of an array.
 double arrayaverage(int* array, int size){
@@ -14,7 +24,7 @@ double arrayaverage(int* array, int size){
 }
 
 
-//Function to print anarray.
+//Function to print an array.
 void printarray(int* array, int size){
     for (int i = 0; i < size; i++){printf("%d ", array[i]);}
     printf("\n");
@@ -58,7 +68,7 @@ void arrsort(int arr[], int size) {
 }
 
 
-//Function to perform binary sort on an array
+//Function to perform binary sort on an array.
 int arrbinsearch(int arr[], int size, int target){
     arrsort(arr, size);
     int left = 0, right = size - 1;
@@ -71,7 +81,7 @@ int arrbinsearch(int arr[], int size, int target){
 }
 
 
-//Function to flip an array.
+//Function to flip (reverse) an array.
 void arrflip(int arr[], int size) {
     int start = 0, end = size - 1;
     while (start < end) {

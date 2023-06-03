@@ -4,6 +4,14 @@
 
 //These functions aid with string manipulation and are not included in the string.h header file.
 
+/*      CONTENTS:
+    copystring: Function to duplicate a string with memory allocation.
+    strreverse: This function reverses a string.
+    strwordcount: Function to count the number of words in a string.
+    str_remove_chars: Function to remove every character of string 2 from string 1. 
+*/
+
+
 
 // Function to duplicate a string with memory allocation. (Initially in memory management file).
 // Can also be used to initialize a string.

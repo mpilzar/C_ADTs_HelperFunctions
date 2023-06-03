@@ -3,6 +3,15 @@
 
 //These functions aid in input and output.
 
+/*      CONTENTS:
+    visit: Function to print an integer, passed as input in other functions.
+    setcursorposition: Function to set a cursor's position to the given coordinates.
+    clearconsole: Function clears the console.
+    showprogressbar: Function to display a progress bar.
+    r_ch: Function reads a character variable.
+    r_int: Function reads an integer variable.
+*/
+
 
 //Function to print an integer, passed as input in other functions.
 void visit(int data) {

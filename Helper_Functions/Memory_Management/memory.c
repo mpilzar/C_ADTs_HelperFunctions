@@ -4,6 +4,12 @@
 
 /*These functions aid with memory allocation.*/
 
+/*      CONTENTS:
+    mallocate: Memory allocation (malloc) with error handling.
+    reallocate: Memory reallocation (realloc) with error handling.
+    copystring: Function to duplicate a string with memory allocation.
+*/
+
 
 //Memory allocation (malloc) with error handling.
 void* mallocate(size_t num_elements, size_t element_size){
@@ -30,8 +36,8 @@ void* reallocate(void* ptr, size_t new_size) {
 */
 
 
-// Function to duplicate a string with memory allocation.
-// Can also be used to initialize a string.
+//Function to duplicate a string with memory allocation.
+//Can also be used to initialize a string.
 char* copystring(const char* str) {
     if (str == NULL) {return NULL;}
     size_t len = strlen(str);

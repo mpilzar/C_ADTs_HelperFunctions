@@ -4,14 +4,23 @@
 
 //Miscellaneous helper functions.
 
+/*      CONTENTS:
+    swapint: Function to swap 2 integers.
+    power: Power calculation.
+    factorial: Factorial calculation.
+    isprime: Function returns 1 if the given number is a prime number, else 0.
+    isnumber: Function returns 1 if character is a decimal number, 0 if it is not.
+    isoperator: Function returns 1 if character is an operator, 0 if it is not.
+*/
+
 
 //Function to swap 2 integers.
-void swapIntegers(int *a, int *b){
+void swapint(int *a, int *b){
     int temp = *a; *a = *b; *b = temp; }
 /*Call by reference is used to avoid errors*/
 
 
-//Power function.
+//Power calculation.
 int power(int base, int pow){
     int result = 1;
     while (pow > 0){ result *= base; pow--;}
@@ -19,7 +28,7 @@ int power(int base, int pow){
 /*Used to avoid including the math.h header file.*/
 
 
-//Factorial function
+//Factorial calculation.
 int factorial(int n){
     int result = 1;
     while (n > 0){ result *= n; n--;}
@@ -28,7 +37,7 @@ int factorial(int n){
 
 
 //Function returns 1 if the given number is a prime number, else 0.
-int isPrime(int num) {
+int isprime(int num) {
     if (num <= 1){ return 0;} int i;
     for (i = 2; i <= num / 2; i++){
         if (num % i == 0){ return 0;}
