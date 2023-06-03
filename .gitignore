@@ -1,6 +1,6 @@
 # build/: Repository that stores compiled code.
-# build/
-# !build/.keep
+build/
+!build/.keep
 
 # Executables.
 *.exe
