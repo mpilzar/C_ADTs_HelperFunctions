@@ -1,3 +1,6 @@
+### THIS IS A BASIC MAKEFILE TEMPLATE
+### COPY INTO ANY PROJECT AND ADJUST IT TO YOUR NEEDS
+
 # compile with gcc
 CC=gcc
 
@@ -14,8 +17,10 @@ LDFLAGS += -lm
 # set the name of the executable file to compile here
 PROGRAM = main
 
+### REMOVE THE HASHTAGS BELOW AND CHANGE FILE NAMES APPROPRIATELY:
 
 # OBJS = main.o ANY_HEADER_FILE.o
+# TEST_OBJS = test.o ANY_HEADER_FILE.o
 
 $(PROGRAM): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) $(LDFLAGS) -o $(PROGRAM)
