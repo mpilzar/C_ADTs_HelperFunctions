@@ -20,7 +20,7 @@ List *list_create(){    //Creates a new list with just a head (first) node and t
     return head;
 }
 
-int list_size(List *l){     //Head and tail nodes not included.
+int dlist_size(List *l){     //Head and tail nodes not included.
     int i = 0;
     List *cur = l;  
     cur = cur->next;   //Skips head node.
@@ -29,20 +29,20 @@ int list_size(List *l){     //Head and tail nodes not included.
     return i;
 }
 
-int list_isempty(List *l){   //If there are no nodes between head and tail, the list is classified as empty.
+int dlist_isempty(List *l){   //If there are no nodes between head and tail, the list is classified as empty.
     List *cur = l;       
     cur = cur->next;         //Skips head node.
     if(cur->next != NULL){return 1;}       
     else{return 0;}
 }
 
-int list_getfirst(List *l){    //Doesn't return head node, but the node after the head node.
+int dlist_getfirst(List *l){    //Doesn't return head node, but the node after the head node.
     List *cur = l;
     cur = cur->next;    //Skips head node.
     return cur->data;
 }
 
-int list_getlast(List *l){
+int dlist_getlast(List *l){
     List *cur = l;
     cur = cur->next;  //Skips head node
     while(cur->next != NULL){ cur = cur->next;}
@@ -50,7 +50,7 @@ int list_getlast(List *l){
     return cur->data;  //Returns last node before tail node.
 }
 
-int list_getprev(List *l, int i){  //No input check
+int dlist_getprev(List *l, int i){  //No input check
     List *cur = l;
     int j;
     for(j = 0 ; j < i ; j++){   cur = cur -> next;}
@@ -58,14 +58,14 @@ int list_getprev(List *l, int i){  //No input check
 
 }
 
-int list_getnext(List *l, int i){  //No input check
+int dlist_getnext(List *l, int i){  //No input check
     List *cur = l;
     int j;
     for(j = 0 ; j < i ; j++){ cur = cur -> next;}
     return cur->next->data;
 }
 
-List *list_addbefore(List *l, int data, int i){
+List *dlist_addbefore(List *l, int data, int i){
     List *node = malloc(sizeof(List));      //Creates new node
     node->next = NULL;
     node->prev = NULL;
@@ -81,7 +81,7 @@ List *list_addbefore(List *l, int data, int i){
 }
 
 
-List *list_addafter(List *l, int data, int i){
+List *dlist_addafter(List *l, int data, int i){
     List *node = malloc(sizeof(List));
     node->next = NULL;
     node->prev = NULL;
@@ -96,7 +96,7 @@ List *list_addafter(List *l, int data, int i){
     return l;
 }
 
-List *list_addfirst(List *l, int data) {   //Adds node after head node.
+List *dlist_addfirst(List *l, int data) {   //Adds node after head node.
     List *node = malloc(sizeof(List));
     node->next = l->next;
     node->prev = l;            //Initializes node and adds it to the list at the same time.
@@ -107,7 +107,7 @@ List *list_addfirst(List *l, int data) {   //Adds node after head node.
 }
 
 
-List *list_addlast(List *l, int data){
+List *dlist_addlast(List *l, int data){
     List *node = malloc(sizeof(List));    //This time the node is initialized before being added to the list.
     node->next = NULL;
     node->prev = NULL;
@@ -121,7 +121,7 @@ List *list_addlast(List *l, int data){
     return l;
 }
 
-List *list_remove(List *l, int data){   //I didn't check for correct input.
+List *dlist_remove(List *l, int data){   //I didn't check for correct input.
     List *cur = l;
     cur = cur->next;  //Skip head node.
     while(cur->data != data){cur = cur->next;}
@@ -131,7 +131,7 @@ List *list_remove(List *l, int data){   //I didn't check for correct input.
     return l;
 }
 
-void list_print(List *l){      //Prints list
+void dlist_print(List *l){      //Prints list
     List *cur = l->next;
     while(cur->next != NULL){ 
         printf("%d  ", cur->data);
@@ -140,7 +140,7 @@ void list_print(List *l){      //Prints list
 }
 
 
-void list_free(List *l){  //Not required, but i used it for the unit tests.
+void dlist_free(List *l){  //Not required, but i used it for the unit tests.
     List* cur = NULL;
     while (l != NULL) {
         cur = l->next;
