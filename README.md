@@ -4,7 +4,7 @@ An ever-expanding codebase of helper functions and implementations for data stru
 
 Code is licensed under the unlicense, so feel free to copy, reproduce, etc.
 
-This project aims to build a reuseable codebase for the C Programming Language.
+This project aims to build a reuseable codebase for in C.
 
 ## How to compile & test
 
