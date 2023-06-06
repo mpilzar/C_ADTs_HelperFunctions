@@ -148,3 +148,31 @@ void dlist_free(List *l){  //Not required, but i used it for the unit tests.
         l = cur;
     }
 }
+
+List* dlist_reverse(List* l){
+    List* cur = l;
+    List* temp = NULL;
+    while(cur != NULL){
+        temp = cur->prev;
+        cur->prev = cur->next;
+        cur->next = temp;
+        cur = cur->prev;
+    }
+    if(temp != NULL){
+        l = temp->prev;
+    }
+    return l;
+}
+
+int* dlist_toarray(List* l){
+    int* arr = malloc(sizeof(int)*dlist_size(l));
+    List* cur = l;
+    cur = cur->next;
+    int i = 0;
+    while(cur->next != NULL){
+        arr[i] = cur->data;
+        cur = cur->next;
+        i++;
+    }
+    return arr;
+}

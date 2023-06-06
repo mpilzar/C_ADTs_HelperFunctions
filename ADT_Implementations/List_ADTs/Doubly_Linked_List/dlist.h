@@ -1,17 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+typedef struct listnode List;
 
-List *list_create();
-int list_size(List *);
-int list_isempty(List *);
-int list_getfirst(List *);
-int list_getlast(List *);
-int list_getprev(List *, int );
-int list_getnext(List *, int );
-List *list_addbefore(List *, int , int );
-List *list_addafter(List *, int , int );
-List *list_addfirst(List *, int );
-List *list_addlast(List *, int );
-List *list_remove(List *, int );
-void list_print(List *);
-void list_free(List *l);
+List *dlist_create();
+int dlist_size(List *);
+int dlist_isempty(List *);
+int dlist_getfirst(List *);
+int dlist_getlast(List *);
+int dlist_getprev(List *, int );
+int dlist_getnext(List *, int );
+List *dlist_addbefore(List *, int , int );
+List *dlist_addafter(List *, int , int );
+List *dlist_addfirst(List *, int );
+List *dlist_addlast(List *, int );
+List *dlist_remove(List *, int );
+void dlist_print(List *);
+void dlist_free(List *);
+int* dlist_toarray(List* );
+List* dlist_reverse(List* );
