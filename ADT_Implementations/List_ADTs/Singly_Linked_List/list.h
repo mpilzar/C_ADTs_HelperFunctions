@@ -40,3 +40,12 @@ List *list_add_after_first(List *, int );
 
 //Function to merge 2 lists
 List *list_merge(List *, List *);
+
+int list_isempty(List *);
+List* list_addpos(List* , int , int );
+List* list_reverse(List* );
+List* list_deletefirst(List *);
+List* list_deletelast(List* );
+int* list_toarray(List* );
+List* list_sortasc(List* );
+List* list_sortdesc(List* );
