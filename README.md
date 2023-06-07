@@ -28,15 +28,15 @@ make test
 - [x] Input & Output [inout.c](Helper_Functions/Input_Output/inout.c)
 - [x] Memory Management [memory.c](Helper_Functions/Memory_Management/memory.c)
 - [x] Miscellaneous [misc.c](Helper_Functions/Miscellaneous/misc.c)
-- [x] String Manipulation [strings.c](Helper/Functions/String_Manipulation/strings.c)
-- [ ] Sorting algorithms (For arrays)
+- [x] String Manipulation [strings.c](Helper_Functions/String_Manipulation/strings.c)
+- [x] Sorting algorithms (For arrays) [sort.c](Helper_Functions/Sorting_Algorithms/sort.c)
 
 
 ## Advanced Data Types
 
 ### List ADTs:
-- [ ] Singly Linked List
-- [ ] Doubly Linked List
+- [x] Singly Linked List [list.c](ADT_Implementations/List_ADTs/Singly_Linked_List/list.c)
+- [x] Doubly Linked List [dlist.c](ADT_Implementations/List_ADTs/Doubly_Linked_List/dlist.c)
 - [ ] Unrolled Singly Linked List
 - [ ] Unrolled Doubly Linked List
 - [ ] Circular Singly Linked List
