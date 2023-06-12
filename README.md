@@ -1,4 +1,4 @@
-# C ADTs and Helper Functions
+# C ADTs & Helper Functions
 
 An ever-expanding codebase of helper functions and implementations for data structures.
 
