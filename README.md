@@ -7,10 +7,6 @@ Code is licensed under the unlicense, so feel free to copy, reproduce, etc.
 This project aims to build a reuseable codebase for in C.
 
 
-## STATE OF THE PROJECT:
-All helper functions complete. ADTs largely incomplete. No tests implemented yet.
-
-
 ## How to compile & test
 ____________________________________________________
 NO TESTS IMPLEMENTED FOR NOW. IF YOU NEED THE CODE, JUST COPY & PASTE IT!
@@ -57,30 +53,29 @@ make test
 - [x] Self-Adjusting List [salist.c](ADT_Implementations/List_ADTs/Self-Adjusting_List/salist.c)
 
 ### Tree ADTs:
-- [ ] Basic Tree
-- [ ] Binary Search Tree (BST)
-- [ ] AVL Tree
+- [x] Binary Search Tree (BST) [bst.c](ADT_Implementations/Tree_ADTs/Binary_Search_Tree/bst.c)
+- [x] AVL Tree [avl.c](ADT_Implementations/Tree_ADTs/AVL_Tree/avl.c)
 - [ ] 234 (2-4) Tree
-- [ ] Min Heap
-- [ ] Max Heap
+- [x] Min Heap [minheap.c](ADT_Implementations/Tree_ADTs/Min_Heap/minheap.c)
+- [x] Max Heap [maxheap.c](ADT_Implementations/Tree_ADTs/Max_Heap/maxheap.c)
 - [ ] B Tree
 - [ ] Red-Black Tree
 
 ### Graph ADTs:
 - [ ] Directed Graph
-- [ ] Undirectd Graph
+- [ ] Undirected Graph
 - [ ] Directed Weighted Graph
 - [ ] Undirected Weighted Graph
 
 ### Queue ADTs:
-- [ ] Basic Queue
+- [x] Basic Queue
 - [ ] Priority Queue with Max Heap
-- [ ] Priority Queue with Array
+- [x] Priority Queue with Array
 - [ ] Double-Ended Queue
 - [ ] Circular Queue
 
 ### Other ADTs:
-- [ ] Vector
-- [ ] Stack
-- [ ] Hash Table
-- [ ] Bloom Filter
+- [x] Vector [vector.c](ADT_Implementations/Other_ADTs/Vector/vector.c)
+- [x] Stack [stack.c](ADT_Implementations/Other_ADTs/Stack/stack.c)
+
+
