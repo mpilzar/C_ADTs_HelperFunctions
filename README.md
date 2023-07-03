@@ -1,10 +1,9 @@
 # C ADTs & Helper Functions
 
-An ever-expanding codebase of helper functions and implementations for data structures.
+This project aims to build an ever-expanding codebase of helper functions and implementations for
+data structures in the C programming language.
 
-Code is licensed under the unlicense, so feel free to copy, reproduce, etc.
-
-This project aims to build a reuseable codebase for in C.
+Code is licensed under the unlicense, so feel free to copy, reproduce, etc. as you please.
 
 
 ## How to compile & test
@@ -58,7 +57,6 @@ make test
 - [ ] 234 (2-4) Tree
 - [x] Min Heap [minheap.c](ADT_Implementations/Tree_ADTs/Min_Heap/minheap.c)
 - [x] Max Heap [maxheap.c](ADT_Implementations/Tree_ADTs/Max_Heap/maxheap.c)
-- [ ] B Tree
 - [ ] Red-Black Tree
 
 ### Graph ADTs:
@@ -68,11 +66,11 @@ make test
 - [ ] Undirected Weighted Graph
 
 ### Queue ADTs:
-- [x] Basic Queue
-- [ ] Priority Queue with Max Heap
-- [x] Priority Queue with Array
-- [ ] Double-Ended Queue
-- [ ] Circular Queue
+- [x] Basic Queue [queue.c](ADT_Implementations/Queue_ADTs/Basic_Queue/queue.c)
+- [x] Priority Queue with Max Heap [heappqueue.c](ADT_Implementations/Queue_ADTs/Heap_PriorityQueue/heappqueue.c)
+- [x] Priority Queue with Array [arrpqueue.c](ADT_Implementations/Queue_ADTs/Array_PriorityQueue/arrpqueue.c)
+- [x] Double-Ended Queue [dequeue.c](ADT_Implementations/Queue_ADTs/Double_Ended_Queue/dequeue.c)
+- [x] Circular Queue [cqueue.c](ADT_Implementations/Queue_ADTs/CircularQueue/cqueue.c)
 
 ### Other ADTs:
 - [x] Vector [vector.c](ADT_Implementations/Other_ADTs/Vector/vector.c)
