@@ -5,26 +5,9 @@ data structures in the C programming language.
 
 Code is licensed under the unlicense, so feel free to copy, reproduce, etc. as you please.
 
+No tests will be implemented in this repository, but a basic Makefile template is included.
 
-## How to compile & test
-____________________________________________________
-NO TESTS IMPLEMENTED FOR NOW. IF YOU NEED THE CODE, JUST COPY & PASTE IT!
-____________________________________________________
-
-If the folder with the ADT you desire is incomplete, meaning it's lacking a makefile I haven't implemented a main function
-to test the ADT yet. The code should still work, however, and you're free to copy and paste it.
-
-If the folder is completed, meaning it has a completed header file, a main file and a makefile, run the following:
-```
-cd (folder of choice)
-make
-./main
-```
-If there is also a test file, you can run:
-```
-make test
-./test
-```
+_________________________________________________________
 
 # Goal Checklist
 
